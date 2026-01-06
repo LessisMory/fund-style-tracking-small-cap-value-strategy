@@ -3,6 +3,17 @@ Score labeling utilities
 
 Convert continuous factor scores into
 English-labeled quantile groups
+DO the same as 
+if total > q80:
+    mark = 'high'
+elif total > q60:
+    mark = 'mid_high'
+elif total > q40:
+    mark = 'mid'
+elif total > q20:
+    mark = 'mid_low'
+else:
+    mark = 'low'
 """
 
 import pandas as pd
